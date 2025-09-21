@@ -3,6 +3,5 @@ __pycache__/
 *.pyc
 .env
 .ipynb_checkpoints/
-*.h5
 # ---- Docker ----
 docker-images
