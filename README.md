@@ -28,3 +28,36 @@ It demonstrates a complete **Machine Learning pipeline**:
 The project is deployed using :
 - Frontend: Streamlit
 - Backend: FastAPI,Docker
+
+1. FastAPI Backend
+   ```bash
+   uvicorn gtsrb_app:app --reload
+  - API will be available at: http://127.0.0.1:8000/predict
+2. Streamlit Backend
+    ```bash
+    streamlit run src/streamlit_app.py
+  - UI will be available at: http://localhost:8501
+3. Docker
+    ```bash
+    docker build -t traffic-sign-api .
+    docker run -p 8000:8000 traffic-sign-api
+## To Reproduce
+
+1. To clone Repository
+   ```bash
+   git clone https://github.com/bhavyathatavarthi/GTSRB-Traffic-Sign-Prediction.git
+   cd traffic-sign-api
+2. Create Virtual Environment
+   ```bash
+   python -m venv venv
+   Windwos- venv\Scripts\activate
+   macOS/Linux- source venv/bin/activate
+3. Install Requirements
+   ```bash
+   pip install -r requirements.txt
+
+   
+
+   
+   
+
