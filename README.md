@@ -55,7 +55,7 @@ The project is deployed using :
 3. Install Requirements
    ```bash
    pip install -r requirements.txt
-
+   ```
    
 
    
