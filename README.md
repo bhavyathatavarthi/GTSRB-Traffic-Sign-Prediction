@@ -31,11 +31,12 @@ The project is deployed using :
 
 1. FastAPI Backend
    ```bash
-   uvicorn gtsrb_app:app --reload
+   uvicorn api.gtsrb_app:app --reload
   - API will be available at: http://127.0.0.1:8000/predict
 2. Streamlit Backend
     ```bash
-    streamlit run src/streamlit_app.py
+    cd streamlit_app
+    streamlit run frontend.py
   - UI will be available at: http://localhost:8501
 3. Docker
     ```bash
