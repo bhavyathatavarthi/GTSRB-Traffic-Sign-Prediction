@@ -3,10 +3,10 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 import numpy as np
 import tempfile
-from map_dict import gtsrb_labels
+from api.map_dict import gtsrb_labels
 
 #Load Model
-model=load_model('model/gtsrb_mobilenet.h5')
+model=load_model('GTSRB/model/gtsrb_mobilenet.h5')
 img_size=(128,128)
 
 app=FastAPI(title='Traffic Sign Classifier')
